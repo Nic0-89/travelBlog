@@ -1,3 +1,4 @@
+/* GENERAL CODE FOR ALL THE PAGES */
 * {
   font-family: 'Raleway', sans-serif;
   max-width: 100%;
@@ -5,27 +6,33 @@
   padding: 0;
   margin: 0;
 }
-
-ul {
-  list-style: none;
- background: none;
+.home-btn{
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
-ul li{
+/* CODE FOR NAVBAR IN HOMEPAGE */
+ul {
+  list-style: none;
+  background: none;
+}
+
+ul li {
   display: inline-block;
   position: relative;
 }
 
-ul li a{
+ul li a {
   display: block;
   padding: 20px 25px;
   color: #fff;
-text-decoration: none; 
-text-align: center;
-font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
 }
 
-ul li ul.dropdown{
+ul li ul.dropdown {
   width: 100%;
   background: #333;
   position: absolute;
@@ -33,14 +40,15 @@ ul li ul.dropdown{
   display: none;
 }
 
-ul li a:hover{
+ul li a:hover {
   background: #333;
 }
-ul li:hover ul.dropdown{
+
+ul li:hover ul.dropdown {
   display: block;
 }
 
-
+/* CODE FOR MAIN IMAGES AND TITLE IN HOMEPAGE */
 #middle-page img {
   position: relative;
   margin-top: 0;
@@ -49,7 +57,6 @@ ul li:hover ul.dropdown{
 
 #middle-page h1 {
   position: absolute;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -65,6 +72,140 @@ ul li:hover ul.dropdown{
   color: #c7c7c7;
   width: 80%;
   padding: 10px;
-  /* Some padding */
+  text-align: center;
+}
+
+/* UNTIL HERE GOES THE HOMEPAGE */
+/*STARTING WITH CANADA PAGE*/
+
+/* <div id="middle-page-canada">
+        <img src="Canada.jpg" alt="canada-mountains">
+        <div id="main-title-canada"> */
+#middle-page-canada img {
+  max-width:  90%;
+  max-height: 90%;
+  position: relative;
+  display: block;
+  padding: 20px;
+  margin: auto;
+  object-fit: contain;
+}
+
+#middle-page-canada h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-family: 'Sedgwick Ave';
+}
+
+#main-title-canada h1 {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #c7c7c7;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+/*STARTING WITH SWEDEN PAGE*/
+
+/* <div id="middle-page-sweden">
+<img src="images\sweden.jpg" alt="downtown">
+<div id="main-title-canada"> */
+
+#middle-page-sweden img {
+  max-width: 90%;
+  position: relative;
+  display: block;
+  padding: 20px;
+  margin: auto;
+}
+
+#middle-page-sweden h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-family: 'Sedgwick Ave';
+}
+
+#main-title-sweden h1 {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #c7c7c7;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+/*STARTING WITH DENMARK PAGE*/
+
+/* <div id="middle-page-copenhagen">
+        <img src="images\Copenhagen.jpg" alt="downtown">
+        <div id="main-title-copenhagen"> */
+#middle-page-copenhagen img {
+  max-width: 90%;
+  position: relative;
+  display: block;
+  padding: 20px;
+  margin: auto;
+}
+
+#middle-page-copenhagen h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-family: 'Sedgwick Ave';
+}
+
+#main-title-copenhagen h1 {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #c7c7c7;
+  width: 80%;
+  padding: 10px;
+  text-align: center;
+}
+
+/*STARTING WITH AUSTRALIA PAGE*/
+/* <div id="middle-page-australia">
+<img src="images\australia.jpg" alt="kangaroo">
+<div id="main-title-australia"> */
+#middle-page-australia img {
+  max-width: 90%;
+  position: relative;
+  display: block;
+  padding: 20px;
+  margin: auto;
+}
+
+#middle-page-australia h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-family: 'Sedgwick Ave';
+}
+
+#main-title-australia h1 {
+  background: rgb(0, 0, 0);
+  /* Fallback color */
+  background: rgba(0, 0, 0, 0.5);
+  /* Black background with 0.5 opacity */
+  color: #c7c7c7;
+  width: 80%;
+  padding: 10px;
   text-align: center;
 }
