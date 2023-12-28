@@ -2,44 +2,82 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
-    <title>My travel blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+  <title>My travel blog</title>
 </head>
 <ul>
-    <li><a href="#home">Latest posts</a></li>
-    <li><a href="about.html">About</a></li>
-    <li class="dropdown">
-      <a href="#" class="dropbtn">Countries</a>
-      <ul class="dropdown">
-        <li><a href="sweden.html">Sweden</a></li>
-        <li><a href="denmark.html">Denmark</a></li>
-        <li><a href="australia.html">Australia</a></li>
-        <li><a href="canada.html">Canada</a></li>
-      </ul>
-    </li>
-  </ul>
-
-<div id="middle-page">
-    <img src="images\map2.jpg" alt="main-map">
-    <div id="main-title">
-        <h1>Travel abroad with me</h1>
-    </div>
-</div>
-</div>
+  <li><a href="#home">Latest posts</a></li>
+  <li><a href="about.html">About</a></li>
+  <li class="dropdown">
+    <a href="#" class="dropbtn">Countries</a>
+    <ul class="dropdown">
+      <li><a href="sweden.html">Sweden</a></li>
+      <li><a href="denmark.html">Denmark</a></li>
+      <li><a href="australia.html">Australia</a></li>
+      <li><a href="canada.html">Canada</a></li>
+    </ul>
+  </li>
+</ul>
 
 <body>
 
 
+  <div id="middle-page">
+    <img src="images\map2.jpg" alt="main-map">
+    <div id="main-title">
+      <h1>Travel abroad with me</h1>
+    </div>
+  </div>
+  </div>
+  <h2 id="recentBlogs">Recent Blog Posts</h2>
+  <input type="text" id="search-bar" placeholder='Search for a post'>
 
-    <script src="sandbox.js"></script>
+
+  <div class="categories">
+    <div class="post Australia">
+      <h2 class="country">Australia</h2>
+      <a href="#" class="post-title">Living in the Australian Outback</a>
+      <img class="card-img" src="fotos sized/croc-aus.jpg" alt="croc">
+      <span class="post-date"> 20 Dec 2023</span>
+      <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
+    </div>
+
+    <div class="post denmark">
+      <h2 class="country">Denmark</h2>
+      <a href="#" class="post-title">Beautiful Copenhagen</a>
+      <img class="card-img" src="fotos sized/den.jpg" alt="port">
+      <span class="post-date"> 23 Dec 2023</span>
+      <p class="descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eveniet natus necessitatibus.
+        Numquam, iste deleniti?</p>
+    </div>
+
+    <div class="post sweden">
+      <h2 class="country">Sweden</h2>
+      <a href="#" class="post-title">Living in the Australian Outback</a>
+      <img class="card-img" src="fotos sized/swe1.jpg" alt="Mariafred">
+      <span class="post-date"> 25 Dec 2023</span>
+      <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
+    </div>
+
+    <div class="post canada">
+      <h2 class="country">Canada</h2>
+      <a href="#" class="post-title">A cold winter in the Caravan Park</a>
+      <img class="card-img" src="fotos sized/can2.jpg" alt="campervan">
+      <span class="post-date"> 20 Dec 2023</span>
+      <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
+    </div>
+  </div>
+
+
+  <script src="sandbox.js"></script>
 </body>
 
 </html>
