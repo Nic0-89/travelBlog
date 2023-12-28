@@ -6,7 +6,8 @@
   padding: 0;
   margin: 0;
 }
-.home-btn{
+
+.home-btn {
   border-radius: 10px;
   margin-top: 5px;
   margin-left: 5px;
@@ -82,7 +83,7 @@ ul li:hover ul.dropdown {
         <img src="Canada.jpg" alt="canada-mountains">
         <div id="main-title-canada"> */
 #middle-page-canada img {
-  max-width:  90%;
+  max-width: 90%;
   max-height: 90%;
   position: relative;
   display: block;
@@ -208,4 +209,71 @@ ul li:hover ul.dropdown {
   width: 80%;
   padding: 10px;
   text-align: center;
+}
+
+/* PAGE ABOUT PROFILE
+<div id="middle-page-profile">
+        <img src="fotos sized\me short hair.png" alt="profile">
+        <div id="main-title-profile">
+            <h1>Little bit about me</h1> */
+
+            
+#middle-page-profile img {
+  max-width: 90%;
+  position: relative;
+  display: block;
+  padding: 20px;
+  margin: auto;
+}
+
+#middle-page-profile h1 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  font-family: 'Sedgwick Ave';
+}
+
+#main-title-profile h1 {
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  color: #c7c7c7;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+
+#main-description {
+  text-align: center;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+
+#main-description h3 {
+  position: absolute;
+  left: 50%;
+  margin: 20px 30px;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  font-family: 'Sedgwick Ave';
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  color: #f5bb6a;
+  width: 50%;
+  padding: 5px;
+
+}
+
+#main-description p {
+  display: block;
+  overflow: hidden;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
 }
