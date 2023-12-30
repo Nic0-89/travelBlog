@@ -374,7 +374,6 @@ h4 {
   background: var(--black-color);
   background: var(--transparency-color);
   width: 80%;
-  margin: auto;
   display: none;
 }
 
