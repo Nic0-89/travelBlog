@@ -77,31 +77,37 @@
         </div>
     </section>
 
+
     <section>
         <div id="add-comment">
             <h4>Leave a reply</h4>
             <hr>
-            <form action="">
-
                 <p>You email address will be kept secret. All required fields are marked *</p><br>
-                <div id="comment">
-                <label for="">Comment*</label><br>
-                <input type="text" id="" name="comment-sec" placeholder="Write your comment here..."><br>
-            </div>
-            <div id="name">
-                <label for="">Name*</label><br>
-                <input type="text" id="name-input" name="name" placeholder="Jane Doe"><br>
-            </div>
-            <div id="email">  
-                <label for="">Email*</label><br>
-                <input type="text" id="email-address" name="email" placeholder="name@somewhere.com"><br>
-            </div> 
-            <div id="phone"> 
-                <label for="">Phone</label><br>
-                <input type="number" id="phone-number" name="phone" placeholder="077-xxxxxxxxx"><br>
-            </div> 
-            <div><input type="submit"></div>
+                <hr>
+                <div id="written-comments"><span id="counter"> 0 Comments</span><br>
+                    <p id="date-and-who"></p>
+                    <p id="comments-added"></p></div>
+                    <hr>
 
+                <form action="">
+                <div id="commentDiv">
+                    <label for="comment">Comment* <br>
+                        <textarea name="comment" id="comment" cols="100" rows="10" maxlength="500" required
+                        placeholder="Enter a comment"></textarea></label><br>
+
+                    <label>Name* <br><input type="text" class="comment-css" id="name-input" name="name" placeholder="Jane Doe"
+                            autocomplete="given-name"></label><br>
+
+                    <label>Email* <br><input type="text" class="comment-css" id="email-address" name="email"
+                            placeholder="name@somewhere.com" autocomplete="email"></label><br>
+
+                    <label>Phone <br>
+                        <input type="number" class="comment-css" id="phone-number" name="phone" placeholder="077-xxxxxxxxx"
+                        autocomplete="off"></label><br>
+                    
+                </div>
+                <button type="button" onclick='clicker(), getDate()' id="submit" class="btn-submit">Post Comment</button>
+               
             </form>
         </div>
     </section>

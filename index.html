@@ -38,13 +38,13 @@
   </div>
   </div>
   <h2 id="recentBlogs">Recent Blog Posts</h2>
-  <input type="text" id="search-bar" placeholder='Search for a post'>
+<hr>
 
 
   <div class="categories">
     <div class="post Australia">
       <h2 class="country">Australia</h2>
-      <a href="#" class="post-title">Living in the Australian Outback</a>
+      <a href="australia.html" class="post-title">Living in the Australian Outback</a>
       <img class="card-img" src="fotos sized/croc-aus.jpg" alt="croc">
       <span class="post-date"> 20 Dec 2023</span>
       <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
@@ -52,7 +52,7 @@
 
     <div class="post denmark">
       <h2 class="country">Denmark</h2>
-      <a href="#" class="post-title">Beautiful Copenhagen</a>
+      <a href="denmark.html" class="post-title">Beautiful Copenhagen</a>
       <img class="card-img" src="fotos sized/den.jpg" alt="port">
       <span class="post-date"> 23 Dec 2023</span>
       <p class="descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eveniet natus necessitatibus.
@@ -61,7 +61,7 @@
 
     <div class="post sweden">
       <h2 class="country">Sweden</h2>
-      <a href="#" class="post-title">Living in the Australian Outback</a>
+      <a href="sweden.html" class="post-title">Staying in Sweden</a>
       <img class="card-img" src="fotos sized/swe1.jpg" alt="Mariafred">
       <span class="post-date"> 25 Dec 2023</span>
       <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
@@ -69,13 +69,80 @@
 
     <div class="post canada">
       <h2 class="country">Canada</h2>
-      <a href="#" class="post-title">A cold winter in the Caravan Park</a>
+      <a href="canada.html" class="post-title">A cold winter in the Caravan Park</a>
       <img class="card-img" src="fotos sized/can2.jpg" alt="campervan">
       <span class="post-date"> 20 Dec 2023</span>
       <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
     </div>
   </div>
 
+<!-- extra add from the previos four -->
+<div class="categories">
+  <div class="post Australia">
+    <h2 class="country">Australia</h2>
+    <a href="australia.html" class="post-title">Living in the Australian Outback</a>
+    <img class="card-img" src="fotos sized/aus.jpg" alt="trekking">
+    <span class="post-date"> 18 Dec 2023</span>
+    <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
+  </div>
+
+  <div class="post denmark">
+    <h2 class="country">Denmark</h2>
+    <a href="denmark.html" class="post-title">Beers in Denmark</a>
+    <img class="card-img" src="fotos sized/den1.jpg" alt="beer">
+    <span class="post-date"> 23 Dec 2023</span>
+    <p class="descrip">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae eveniet natus necessitatibus.
+      Numquam, iste deleniti?</p>
+  </div>
+
+  <div class="post sweden">
+    <h2 class="country">Sweden</h2>
+    <a href="sweden.html" class="post-title">More about Stockholm</a>
+    <img class="card-img" src="fotos sized/swe2.jpg" alt="snowman">
+    <span class="post-date"> 13 Dec 2023</span>
+    <p class="descrip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, nostrum.</p>
+  </div>
+
+  <div class="post canada">
+    <h2 class="country">Canada</h2>
+    <a href="canada.html" class="post-title">A cold winter in the Caravan Park</a>
+    <img class="card-img" src="fotos sized/can3.jpg" alt="Jofrey-Lakes">
+    <span class="post-date"> 11 Dec 2023</span>
+    <p class="descrip">Lorem ipsum dolor  ipsum dolor sitsit amet  ipsum dolor sitconsectetur adipisicing elit. Iusto, nostrum.</p>
+  </div>
+</div>
+
+  <section>
+    <div id="add-comment">
+        <h4>Leave a reply</h4>
+        <hr>
+        <form action="">
+
+            <p>You email address will be kept secret. All required fields are marked *</p><br>
+            <div id="comment">
+            <label for="">Comment*</label><br>
+            <textarea name="comment" id="comment" cols="30" rows="10" maxlength="1000" required placeholder="write a comment here"></textarea>
+            <br>
+           
+        </div>
+        <div id="name">
+            <label for="">Name*</label><br>
+            
+            <input type="text" id="name-input" name="name" placeholder="Jane Doe"><br>
+        </div>
+        <div id="email">  
+            <label for="">Email*</label><br>
+            <input type="text" id="email-address" name="email" placeholder="name@somewhere.com"><br>
+        </div> 
+        <div id="phone"> 
+            <label for="">Phone</label><br>
+            <input type="number" id="phone-number" name="phone" placeholder="077-xxxxxxxxx"><br>
+        </div> 
+        <div><input name="submit" type="submit" id="submit" class="submit" value="Post Comment"></div>
+
+        </form>
+    </div>
+</section>
 
   <script src="sandbox.js"></script>
 </body>
