@@ -18,6 +18,7 @@
   --text-color: #d7f4f2;
   --bg-color: #6d6d6d;
   --font-size-h4: 2rem;
+  --font-size-h1:6vw;
 }
 
 html {
@@ -134,7 +135,7 @@ ul li:hover ul.dropdown {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size:var(--font-size-h1);
   font-family: 'Sedgwick Ave';
 }
 
@@ -142,6 +143,7 @@ ul li:hover ul.dropdown {
   background: var(--black-color);
   background: var(--transparency-color);
   color: var(--text-color);
+  font-size:var(--font-size-h1);
   width: 80%;
   padding: 10px;
   text-align: center;
@@ -164,7 +166,7 @@ ul li:hover ul.dropdown {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size:var(--font-size-h1);
   font-family: 'Sedgwick Ave';
 }
 
@@ -172,6 +174,7 @@ ul li:hover ul.dropdown {
   background: var(--black-color);
   background: var(--transparency-color);
   color: var(--text-color);
+  font-size:var(--font-size-h1);
   width: 80%;
   padding: 10px;
   text-align: center;
@@ -192,7 +195,7 @@ ul li:hover ul.dropdown {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size:var(--font-size-h1);
   font-family: 'Sedgwick Ave';
 }
 
@@ -200,6 +203,7 @@ ul li:hover ul.dropdown {
   background: var(--black-color);
   background: var(--transparency-color);
   color: var(--text-color);
+  font-size:var(--font-size-h1);
   width: 80%;
   padding: 10px;
   text-align: center;
@@ -228,6 +232,7 @@ ul li:hover ul.dropdown {
   background: var(--black-color);
   background: var(--transparency-color);
   color: var(--text-color);
+  font-size:var(--font-size-h1);
   width: 80%;
   padding: 10px;
   text-align: center;
@@ -249,7 +254,7 @@ ul li:hover ul.dropdown {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5rem;
+  font-size:var(--font-size-h1);
   font-family: 'Sedgwick Ave';
 }
 
@@ -257,6 +262,7 @@ ul li:hover ul.dropdown {
   background: var(--black-color);
   background: var(--transparency-color);
   color: var(--text-color);
+  font-size:var(--font-size-h1);
   width: 80%;
   padding: 10px;
   text-align: center;
