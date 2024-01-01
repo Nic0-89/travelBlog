@@ -148,11 +148,7 @@ ul li:hover ul.dropdown {
 }
 
 /* UNTIL HERE GOES THE HOMEPAGE */
-/*STARTING WITH CANADA PAGE*/
 
-/* <div id="middle-page-canada">
-        <img src="Canada.jpg" alt="canada-mountains">
-        <div id="main-title-canada"> */
 #middle-page-canada img {
   max-width: 90%;
   max-height: 90%;
@@ -183,10 +179,6 @@ ul li:hover ul.dropdown {
 
 /*STARTING WITH SWEDEN PAGE*/
 
-/* <div id="middle-page-sweden">
-<img src="images\sweden.jpg" alt="downtown">
-<div id="main-title-canada"> */
-
 #middle-page-sweden img {
   max-width: 90%;
   position: relative;
@@ -215,9 +207,6 @@ ul li:hover ul.dropdown {
 
 /*STARTING WITH DENMARK PAGE*/
 
-/* <div id="middle-page-copenhagen">
-        <img src="images\Copenhagen.jpg" alt="downtown">
-        <div id="main-title-copenhagen"> */
 #middle-page-copenhagen img {
   max-width: 90%;
   position: relative;
@@ -245,9 +234,7 @@ ul li:hover ul.dropdown {
 }
 
 /*STARTING WITH AUSTRALIA PAGE*/
-/* <div id="middle-page-australia">
-<img src="images\australia.jpg" alt="kangaroo">
-<div id="main-title-australia"> */
+
 #middle-page-australia img {
   max-width: 90%;
   position: relative;
@@ -275,11 +262,8 @@ ul li:hover ul.dropdown {
   text-align: center;
 }
 
-/* PAGE ABOUT PROFILE
-<div id="middle-page-profile">
-        <img src="fotos sized\me short hair.png" alt="profile">
-        <div id="main-title-profile">
- */
+/* PAGE ABOUT PROFILE*/
+
 
 section {
   margin: 0 20px 20px 20px;
@@ -303,7 +287,7 @@ section {
   position: relative;
 }
 
-#main-description>h3 {
+#main-description>h4 {
   position: relative;
   display: inline;
   margin: auto;
@@ -387,10 +371,10 @@ h4 {
   font-size: 1rem;
   font-weight: 600;
 }
-.deleteBtn{
+.btn{
  
   background-color: var(--second-color);
-  color: var(--text-color);
+  color: var(--black-color);
   width: 5%;
   padding: 10px;
   height: 10px;
@@ -418,5 +402,10 @@ input {
   margin-left: 43%;
   font-size: var(--font-size-h4);
   font-weight: 600;
+
+}
+
+.material-symbols-outlined {
+color: rgb(45, 44, 44);
 
 }

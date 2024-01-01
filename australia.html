@@ -11,22 +11,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>My travel blog</title>
+</head>
+
 <body>
-  <header>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About me</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropbtn">Countries</a>
-          <ul class="dropdown">
-            <li><a href="sweden.html">Sweden</a></li>
-            <li><a href="denmark.html">Denmark</a></li>
-            <li><a href="australia.html">Australia</a></li>
-            <li><a href="canada.html">Canada</a></li>
-          </ul>
-        </li>
-      </ul>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About me</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Countries</a>
+                <ul class="dropdown">
+                    <li><a href="sweden.html">Sweden</a></li>
+                    <li><a href="denmark.html">Denmark</a></li>
+                    <li><a href="australia.html">Australia</a></li>
+                    <li><a href="canada.html">Canada</a></li>
+                </ul>
+            </li>
+        </ul>
     </header>
     <div id="middle-page-australia">
         <img src="images\australia.jpg" alt="kangaroo">
@@ -35,8 +39,91 @@
         </div>
     </div>
     </div>
-    
-    
+
+    <section id="middle-page-profile">
+        <img src="fotos sized\aus.jpg" alt="profile">
+        <div id="main-description">
+            <h4>Northern Territories</h4>
+
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sit amet justo donec enim diam vulputate ut pharetra.
+                    Fringilla phasellus faucibus scelerisque eleifend donec. Tellus
+                    rutrum tellus pellentesque eu tincidunt tortor. Vitae auctor eu
+                    augue ut lectus arcu bibendum at. Nulla malesuada pellentesque
+                    elit eget gravida. </p>
+                <p>Arcu non odio euismod lacinia at quis. Iaculis
+                    eu non diam phasellus vestibulum lorem sed risus. Est lorem
+                    ipsum dolor sit amet consectetur adipiscing. Justo nec ultrices
+                    dui sapien eget mi proin. Enim ut sem viverra aliquet. Arcu
+                    felis bibendum ut tristique. Eget mi proin sed libero enim.
+                    Vitae proin sagittis nisl rhoncus. Eu mi bibendum neque egestas
+                    congue. Iaculis eu non diam phasellus. </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="middle-page-profile">
+        <img src="fotos sized\croc-aus.jpg" alt="profile">
+        <div id="main-description">
+            <h4>Crocs crocs and more crocs</h4>
+
+            <div class="box">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Sit amet justo donec enim diam vulputate ut pharetra.
+                    Fringilla phasellus faucibus scelerisque eleifend donec.
+                    elit eget gravida. </p>
+                <p>Arcu non odio euismod lacinia at quis. Iaculis
+                    eu non diam phasellus vestibulum lorem sed risus. Est lorem
+                    ipsum dolor sit amet consectetur adipiscing. Justo nec ultrices
+                    dui sapien eget mi proin. </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section>
+        <div id="add-comment">
+            <h4>Leave a reply</h4>
+            <hr>
+            <p>You email address will be kept secret. All required fields are marked *</p><br>
+            <hr>
+            <div id="posts"><span id="counter"> 0 Comments</span><br>
+
+            </div>
+            <hr>
+
+            <form action="" id="submit-comment">
+                <div id="commentDiv">
+                    <label for="comment">Comment* <br>
+                        <textarea name="comment" id="comment" cols="100" rows="10" maxlength="500" required
+                            placeholder="Enter a comment"></textarea></label><br>
+
+                    <label>Name* <br><input type="text" class="comment-css" id="name-input" name="name"
+                            placeholder="Jane Doe" autocomplete="given-name"></label><br>
+
+                    <label>Email* <br><input type="text" class="comment-css" id="email-address" name="email"
+                            placeholder="name@somewhere.com" autocomplete="email"></label><br>
+
+                    <label>Phone <br>
+                        <input type="number" class="comment-css" id="phone-number" name="phone"
+                            placeholder="077-xxxxxxxxx" autocomplete="off"></label><br>
+
+                </div>
+                <button type="button" onclick='addPost()' id="submit" class="btn-submit">Post Comment</button>
+
+            </form>
+        </div>
+    </section>
+
+
     <script src="sandbox.js"></script>
 </body>
 
