@@ -61,9 +61,10 @@
                     Vitae proin sagittis nisl rhoncus. Eu mi bibendum neque egestas
                     congue. Iaculis eu non diam phasellus. </p>
             </div>
-        </div>
     </section>
+ 
 
+<hr>
 
     <section id="middle-page-profile">
         <img src="fotos sized\croc-aus.jpg" alt="profile">
@@ -81,48 +82,51 @@
                     ipsum dolor sit amet consectetur adipiscing. Justo nec ultrices
                     dui sapien eget mi proin. </p>
             </div>
-        </div>
     </section>
 
+<section id="added-post"></section>
+<hr>
+<!-- FOR THE NEW POST -->
+<section id="new-post"> <h4>Add new post</h4>
+    <div id="main-for-post"></div>
+    <form action="" id="submit-post">
+        
+            <label for="comment">Comment* <br>
+                <textarea name="comment" id="adding-post" cols="100" rows="10" maxlength="500" required
+                    placeholder="write your post"></textarea></label><br>
 
-
-
-
+            <label>Name* <br><input type="text" class="comment-css" id="who-posted" name="name"
+                    placeholder="Jane Doe" autocomplete="given-name"></label><br>
+        
+    </form>
+    <button type="button" onclick='addPost()' id="post" class="new-post btn">New Post</button>
+</section>
+<hr>
 
     <section>
         <div id="add-comment">
             <h4>Leave a reply</h4>
-            <hr>
+        
             <p>You email address will be kept secret. All required fields are marked *</p><br>
             <hr>
             <div id="posts"><span id="counter"> 0 Comments</span><br>
-
             </div>
             <hr>
-
+            <hr>
             <form action="" id="submit-comment">
-                <div id="commentDiv">
+                <div id="commentDiv2">
                     <label for="comment">Comment* <br>
                         <textarea name="comment" id="comment" cols="100" rows="10" maxlength="500" required
                             placeholder="Enter a comment"></textarea></label><br>
 
                     <label>Name* <br><input type="text" class="comment-css" id="name-input" name="name"
                             placeholder="Jane Doe" autocomplete="given-name"></label><br>
-
-                    <label>Email* <br><input type="text" class="comment-css" id="email-address" name="email"
-                            placeholder="name@somewhere.com" autocomplete="email"></label><br>
-
-                    <label>Phone <br>
-                        <input type="number" class="comment-css" id="phone-number" name="phone"
-                            placeholder="077-xxxxxxxxx" autocomplete="off"></label><br>
-
                 </div>
-                <button type="button" onclick='addPost()' id="submit" class="btn-submit">Post Comment</button>
-
+                <button type="button" onclick='addComment()' id="submit" class="btn-submit">Post
+                    Comment</button>
             </form>
         </div>
     </section>
-
 
     <script src="sandbox.js"></script>
 </body>

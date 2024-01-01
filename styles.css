@@ -307,7 +307,7 @@ section {
 
 }
 
-p {
+.parAdded,p{
   display: inline-block;
   justify-content: center;
   text-align: center;
@@ -334,17 +334,28 @@ h4 {
 /* comment section */
 #commentDiv {
   margin-top: 40px;
-
-
 }
 
-#comment {
+#comment,#adding-post{
   color: var(--black-color);
   width: 400px;
   border-radius: 5px;
   padding: 10px;
   font-size: 1.3rem;
   font-weight: 600;
+}
+#main-for-post{
+  background: var(--black-color);
+  background: var(--transparency-color);
+  color: var(--text-color);
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
 }
 
 .comment-css {
@@ -367,7 +378,7 @@ h4 {
   display: none;
 }
 
-.btn-submit {
+.btn-submit, .btn {
   background-color: var(--second-color);
   color: var(--text-color);
   width: 20%;
@@ -377,18 +388,7 @@ h4 {
   font-size: 1rem;
   font-weight: 600;
 }
-.btn{
- 
-  background-color: var(--second-color);
-  color: var(--black-color);
-  width: 5%;
-  padding: 10px;
-  height: 10px;
-  border-radius: 5px;
-  font-size: 0.6rem;
-  font-weight: 400;
-  margin: auto;
-}
+
 
 label {
   margin-top: 20px;
