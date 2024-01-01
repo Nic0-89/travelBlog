@@ -1,56 +1,160 @@
 const btn = document.getElementById('submit')
 const nameBox = document.getElementById('name-input')
 const comment = document.getElementById('comment')
-const commentCounter = document.getElementById("counter")
+const commentCounter= document.getElementById("counter")
 const whoPosted = document.getElementById('date-and-who')
 const boxNewComment = document.getElementById('comments-added')
 const newParagrah = document.createElement('p')
 
-//counter for the comment
-let count = 1;
+//for date
+const today = new Date()
+myDate = new Intl.DateTimeFormat('en-us', { dateStyle: 'long' })
 
-function addingComments() {
-      var post_div = document.getElementById("written-comments");
-      var content = document.createElement("p");
-      content.innerHTML = comment.value
-      post_div.appendChild(content)
-      post_div.appendChild(document.createElement("br"))
-         commentCounter.innerHTML = count + ' Comments';
-   count++;
+//counter for the comment
+let count= 0;
+let postId = 0
+
+function addPost(){
+
+   postId = postId+1;
+
+   let posts_div = document.getElementById("posts");
+   let newPost = document.createElement("div");
+   newPost.setAttribute("id", "post_"+postId)
+
+   let newComment = document.createElement("p");
+   newComment.innerText = comment.value;
+
+   newPost.appendChild(newComment)
+
+   let delButton = document.createElement("button");
+   delButton.textContent = 'Delete post';
+
+
+   delButton.value = "post_"+postId
+   delButton.onclick = function(){
+      deletePost(delButton.value)
+   };
+
+   newPost.appendChild(delButton)
+   posts_div.appendChild(newPost)
+   posts_div.appendChild(document.createElement("br"))
+
 };
 
+function deletePost(delValue){
+   let elDelete = document.getElementById(delValue);
+   elDelete.remove();
+}
 
-function displayComment() {
-   boxNewComment.innerHTML = commentBox[count];
-   boxNewComment.style.display = 'block';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const btn = document.getElementById('submit')
+// const nameBox = document.getElementById('name-input')
+// const comment = document.getElementById('comment')
+// const commentCounter = document.getElementById("counter")
+// const emailAddress = document.getElementById('email-address')
+// const boxNewComment = document.getElementById('comments-added')
+// const paragraphs=document.getElementsByClassName('userInfo')
+
+// //counter for the comment
+// let count = 1;
+
+// function addingComments() {
+//    collectInfo()
+//    let post_div = document.getElementById("written-comments");
+//    let content = document.createElement("p");
+//    content.innerHTML = comment.value
+//    content.classList.add('userInfo')
+//    post_div.appendChild(content)
+//    let deleteBtn = document.createElement("button")
+//    deleteBtn.classList.add("deleteBtn")
+//    deleteBtn.innerHTML = 'Delete'
+//    post_div.appendChild(deleteBtn);
+//    deleteBtn.addEventListener('click', removeElements)
    
-}
-// const button = document.createElement('button')
-// button.id= `${post.id}`
-// button.innerText = 'Leave a Comment'
-// postContainer.appendChild(button)
+//    //    let post_div = document.getElementById("written-comments");
+     
+//    // })
+//    post_div.appendChild(document.createElement("br"))
+//    commentCounter.innerHTML = count + ' Comments';
+//    count++;
+//    getDate()
+// };
 
-function createNewElement() {
-   const newP = document.createElement('p');
-   const newComment = commentBox[count]
-   newP.appendChild(newComment)
-}
-//keeping track of the date posted
-let myDate = new Date()
+// // function deleteComment(){
+// //    let post_div = document.getElementById("written-comments");   
+// // let paragraph =document.querySelector("#comments-added");
+// // post_div.removeChild(paragraph);
+// // }
+// function removeElements(){
+//    document.querySelectorAll('.userInfo').remove();
+// }
 
-let myYear = myDate.getFullYear()
-let myMonth = myDate.getMonth()
-let myDay = myDate.getDay() - 1
+// // function removeElements(){
+// //    document.querySelectorAll('.userInfo').forE
+// ach(p => p.remove());
+// // }
+// function collectInfo() {
+//    let userName = document.createElement("p")
+//    userName.innerHTML = nameBox.value
+//    userName.classList.add('userInfo')
+//    userName.style.fontSize = '14px';
+//    let emailUser = document.createElement("p")
+//    emailUser.classList.add('userInfo')
+//    emailUser.innerHTML = emailAddress.value
+//    emailUser.style.fontSize = '14px';
+//    let post_div = document.getElementById("written-comments");
+//    post_div.appendChild(userName)
+//    post_div.appendChild(emailUser)
+//    post_div.appendChild(document.createElement("br"))
 
-let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-let days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-console.log(months)
-console.log(myMonth)
+// }
 
-function getDate() {
-   console.log(`posted on ${days[myDay]} ${myDay}, ${months[myMonth]}, ${myYear}`)
-}
+// //keeping track of the date posted
 
+// const today = new Date()
+// myDate = new Intl.DateTimeFormat('en-us', { dateStyle: 'long' })
+
+// function getDate() {
+//    let post_div = document.getElementById("written-comments");
+//    let datePost = document.createElement("p")
+//    datePost.classList.add('userInfo')
+//    datePost.innerHTML = `posted on ${myDate.format(today)}`
+//    datePost.style.fontSize = '12px'
+//    post_div.appendChild(datePost);
+// }
 
 
 

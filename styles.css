@@ -387,6 +387,18 @@ h4 {
   font-size: 1rem;
   font-weight: 600;
 }
+.deleteBtn{
+ 
+  background-color: var(--second-color);
+  color: var(--text-color);
+  width: 5%;
+  padding: 10px;
+  height: 10px;
+  border-radius: 5px;
+  font-size: 0.6rem;
+  font-weight: 400;
+  margin: auto;
+}
 
 label {
   margin-top: 20px;
