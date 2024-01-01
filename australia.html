@@ -62,9 +62,9 @@
                     congue. Iaculis eu non diam phasellus. </p>
             </div>
     </section>
- 
 
-<hr>
+
+    <hr>
 
     <section id="middle-page-profile">
         <img src="fotos sized\croc-aus.jpg" alt="profile">
@@ -84,29 +84,34 @@
             </div>
     </section>
 
-<section id="added-post"></section>
-<hr>
-<!-- FOR THE NEW POST -->
-<section id="new-post"> <h4>Add new post</h4>
-    <div id="main-for-post"></div>
-    <form action="" id="submit-post">
-        
+    <section id="added-post"></section>
+    <hr>
+    <!-- FOR THE NEW POST -->
+    <section id="new-post">
+        <h4>Add new post</h4>
+        <div id="main-for-post"></div>
+
+        <form action="" id="post-form">
+
+            <label>Title* <br><input type="text" class="title-css" id="title" name="title" placeholder="Title"
+                    autocomplete="given-name"></label><br>
+
             <label for="comment">Comment* <br>
                 <textarea name="comment" id="adding-post" cols="100" rows="10" maxlength="500" required
                     placeholder="write your post"></textarea></label><br>
 
-            <label>Name* <br><input type="text" class="comment-css" id="who-posted" name="name"
-                    placeholder="Jane Doe" autocomplete="given-name"></label><br>
-        
-    </form>
-    <button type="button" onclick='addPost()' id="post" class="new-post btn">New Post</button>
-</section>
-<hr>
+            <label>Name* <br><input type="text" class="comment-css" id="who-posted" name="name" placeholder="Jane Doe"
+                    autocomplete="given-name"></label><br>
+
+        </form>
+        <button type="button" onclick='addPost()' id="post" class="new-post btn">New Post</button>
+    </section>
+    <hr>
 
     <section>
         <div id="add-comment">
             <h4>Leave a reply</h4>
-        
+
             <p>You email address will be kept secret. All required fields are marked *</p><br>
             <hr>
             <div id="posts"><span id="counter"> 0 Comments</span><br>

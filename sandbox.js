@@ -1,8 +1,10 @@
 const btn = document.getElementById('submit')
+const titleBox = document.getElementById('title')
 const nameBox = document.getElementById('name-input')
 const comment = document.getElementById('comment')
 const commentCounter = document.getElementById("counter")
 const form = document.getElementById('submit-comment')
+const formComment = document.getElementById('post-form')
 
 //for date
 const today = new Date()
@@ -26,11 +28,11 @@ function addPost() {
 
    let newDiv = document.createElement("div");
    newDiv.setAttribute('id', 'userPost' + userPost)
-   let newUser = document.createElement("p");
-   
-   newUser.innerHTML = whoPosted.value
-   newUser.style.fontSize = '15px'
-   newUser.style.textAlign = 'left'
+   newDiv.setAttribute('class', 'userPost')
+   console.log('userPost' + userPost)
+
+   let title = document.createElement("h4");
+   title.innerText = titleBox.value;
 
    let newPosted = document.createElement("p")
    newPosted.setAttribute('class','parAdded')
@@ -41,30 +43,36 @@ function addPost() {
    newDatePost.style.fontSize = '13px'
    newDatePost.style.display = 'block'
    newDatePost.style.textAlign = 'left'
-   newDatePost.innerHTML = `posted on ${myDate.format(today)}`
+   newDatePost.innerHTML = `posted on ${myDate.format(today)} by: ${whoPosted.value}`
 
-   divForPosts.appendChild(newUser)
-   divForPosts.appendChild(document.createElement("br"))
-   divForPosts.appendChild(newPosted)
-   divForPosts.appendChild(document.createElement("br"))
-   divForPosts.appendChild(newDatePost)
+
+   newDiv.appendChild(title)
+   newDiv.appendChild(document.createElement("br"))
+   newDiv.appendChild(newPosted)
+   newDiv.appendChild(document.createElement("br"))
+   newDiv.appendChild(newDatePost)
 
    let deletedButton = document.createElement("button");
    deletedButton.innerHTML = '<span class="material-symbols-outlined">delete</span>'
 
 
-   deletedButton.value = "postNumber" + userPost;
+   deletedButton.value = "userPost" + userPost;
    console.log(deletedButton)
    deletedButton.onclick = function () {
       deletePost(deletedButton.value)
 };
-divForPosts.appendChild(deletedButton)
-mainPost.appendChild(divForPosts)
+newDiv.appendChild(deletedButton)
+
+divForPosts.append(newDiv)
+divForPosts.append(document.createElement("br"))
+formComment.reset();
 
 }
 
 function deletePost(delValue) {
+   console.log(delValue)
    let delPost = document.getElementById(delValue);
+   console.log(delPost);
    delPost.remove();
 
 }
